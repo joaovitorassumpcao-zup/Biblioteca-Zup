@@ -18,16 +18,16 @@ public class LivroService {
         return livroRepository.findAll();
     }
 
-    public LivroModel getLivroById(Long id) {
-        return livroRepository.findById(id).orElseThrow();
+    public Optional<LivroModel> getLivroById(Long id) {
+        return livroRepository.findById(id);
     }
 
-    public LivroModel createLivro(LivroModel livro) {
-        return livroRepository.save(livro);
+    public LivroModel createLivro(LivroModel livroModel) {
+        return livroRepository.save(livroModel);
     }
 
-    public LivroModel updateLivro(LivroModel livro) {
-        return livroRepository.save(livro);
+    public LivroModel updateLivro(LivroModel livroModel) {
+        return livroRepository.save(livroModel);
     }
 
     public void deleteLivro(Long id) {
