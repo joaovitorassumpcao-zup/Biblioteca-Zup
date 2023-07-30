@@ -19,6 +19,8 @@ public class LivroModel {
     private Long id;
     @Column(length = 50, nullable = false)
     private String nome;
+    @Column(length = 50, nullable = false)
+    private String autor;
     @Column(nullable = false)
     private Date dataLancamento;
 
