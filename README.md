@@ -1,3 +1,4 @@
 # Biblioteca Zup
 
-Exercicio de SpringBoot para a criação de um API RESTful.
+Exercicio de Spring Framework, Data Percistance e design RESTful.
+![img.png](img.png)
